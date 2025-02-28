@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Forever? ??</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: pink;
+        }
+        h1 {
+            color: red;
+        }
+        #buttons {
+            margin-top: 30px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #yes-btn {
+            background-color: red;
+            color: white;
+        }
+        #no-btn {
+            background-color: gray;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Baby Alicia Will you be my forever? ??</h1>
+    <div id="buttons">
+        <button id="yes-btn" onclick="yesClicked()">Yes! ??</button>
+        <button id="no-btn" onmouseover="moveNoButton()">No ??</button>
+    </div>
+
+    <script>
+        function yesClicked() {
+            alert("?? Yay! You just made my heart so happy! ????\nI can't wait to spend the rest of my life  with you! ??");
+        }
+
+        function moveNoButton() {
+            let noButton = document.getElementById("no-btn");
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            noButton.style.left = x + "px";
+            noButton.style.top = y + "px";
+        }
+    </script>
+
+</body>
+</html>
